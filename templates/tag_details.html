@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+
+{% block title %}All Users{% endblock %}
+
+{% block content %}
+
+<div class="tag-details">
+  <h1 class="tag-name">{{tag.name}}</h1>
+
+  <form class="edit-btn-div"action="/tags/{{tag.id}}/edit">
+    <button class="edit-btn" type="submit">Edit</button>
+  </form>
+
+  <form class="delete-btn-div" action="/tags/{{tag.id}}/delete" method="POST">
+    <button class="delete-btn" type="submit">Delete</button>
+  </form>
+
+  <p>Check out posts tagged with {{tag.name}}!</p>
+  {% for post in tag.posts %}
+    <li><a href="/posts/{{post.id}}">{{post.title}}</a></li>
+  {% endfor %}
+</div>
+
+{% endblock %}

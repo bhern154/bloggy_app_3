@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rowdies&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #f1faee; */
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100vw;
+    height: 70px;
+    background-color: #669bbc;
+    margin: 0;
+    line-height: 70px;
+}
+.content{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+a.logo{
+    text-decoration: none;
+    color: #f1faee;
+    margin: 0px;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    padding-left: 50px;
+}
+a.header-link{
+    text-decoration: none;
+    color: #f1faee;
+    margin: 0px;
+    padding-right: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    float: right;
+}
+a.last{
+    padding-right: 50px;
+}
+h1.title{
+    font-size: 50px;
+    font-weight: 700;
+}
+p{
+    font-size: 20px;
+    font-weight: 300;
+}
+button {
+    background-color: black;
+    border-radius: 0px;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px 10px 25px;
+    font-weight: 800;
+    border: none;
+    cursor:pointer;
+    margin-top: 50px;
+}
+button:hover{
+    background-color: #669bbc;
+}
+input[type=text] {   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: solid 2px #669bbc;
+    width: 300px;
+    height: 30px;
+}
+input::placeholder{
+    color: grey;
+}
+input:focus{
+    color: black;
+}
+input{
+    margin-bottom: 20px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+p.total{
+    font-size: 15px;
+    margin: 0;
+}
+.boxed-content{
+    border-radius: 20px;
+    background-color: #eeeeee;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+a.home-post-title{
+    text-decoration: none;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+}
+.add-btn{
+    margin-bottom: 60px;
+    margin-top: 0px;
+}
+.home-post-content{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.home-post-timestamp{
+    font-size: 14px;
+    color: #5b5b5b;
+    font-style: italic;
+}
+
+.user-img{
+    max-width: 100px;
+    max-height: 100px;
+    float: left;
+    margin-top: 30px;
+}
+.user-details{
+    margin-left: 30px;
+    display: inline-block;
+    width: 50vw;
+    padding-bottom: 20px;
+}
+.post-details{
+    /* margin-left: 30px; */
+    display: inline-block;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.user-name{
+    font-size: 30px;
+    margin: 0;
+    margin-top: 20px;
+}
+.tag-bubble{
+    display: inline-block;
+    background-color: #669bbc;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 3px 15px 3px 15px;
+    border-radius: 10px;
+}
+.tags-title{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+}
+.user_icon{
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+a.box-title{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+}
+.user_info{
+    margin-bottom: 20px;
+}
+.edit-btn{
+    background-color: blue;
+    margin-top: 20px;
+    display: inline-block;
+}
+.delete-btn{
+    background-color: red;
+    margin-top: 20px;
+}
+.edit-btn-div{
+    display: inline-block;
+}
+.delete-btn-div{
+    margin-left: 20px;
+    display: inline-block;
+
+}
+.all-users-form{
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.all-users-btn{
+    margin-left: 0px;
+}
+.cancel-btn{
+    background-color: #f1faee;
+    border: solid 3px black;
+    color: black;
+    margin-left: 30px;
+}
+.cancel-form{
+    display: inline-block;
+}
+.save-btn{
+    border: solid 3px black;
+}
+
+.invalid{
+    font-size: 15px;
+    height: 55px;
+    line-height: 55px;
+    background-color: rgb(228, 167, 167);
+    color: rgb(139, 0, 0);
+    border-radius: 10px;
+    padding-left: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+
+{% block title %}All Users{% endblock %}
+
+{% block content %}
+
+  <h1 class="title">All Users</h1>
+
+  <form action = "/users/new">
+    <button type="submit" class="add-btn">Add User</button>
+  </form>
+  
+  {% for user in users %}
+  <div class="boxed-content">
+    <div class="user_info">
+      <img class="user_icon" src="{{user.image_url}}" height= "60" width="60"/>
+      <a class="box-title" href="/users/{{user.id}}">{{user.first_name}} {{user.last_name}}</a>
+    </div>
+    <p class="total">{{user.posts | length}} posts</p>
+  </div>
+  {% endfor %}
+
+{% endblock %}
